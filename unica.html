@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Periódicos - CAPES</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="unica.css">
+  <link rel="stylesheet" href="periodicos.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+<body>
+  <header class="header-gov">
+    <div class="logo-horizontal">
+      <img src="img/logo-govbr.png" alt="Logo Gov.br">
+      <p>Ministério da Educação/CAPES</p>
+    </div>
+    <nav class="menu">
+      <a href="#">Órgão do Governo</a>
+      <a href="#">Acesso à Informação</a>
+      <a href="#">Legislação</a>
+      <a href="#">Acessibilidade</a>
+    </nav>
+  </header>
+
+  <div class="toggle-arrow" id="toggle-gov-header">
+    <img src="img/angle-small-down.png" alt="Toggle Icon" width="20" height="20">
+  </div>
+
+  <header class="header-capes">
+    <div class="logo-horizontal">
+      <img id="logo-capes" src="img/logo-capes.png" alt="Logo CAPES">
+      <img id="logo-periodicos" src="img/logo-periodicos.jpg" alt="Logo Portal de Periódicos">
+    </div>
+    <nav class="menu">
+      <a href="#">Sobre</a>
+      <a href="#">Acervo</a>
+      <a href="#">Treinamentos</a>
+      <a href="#">Informativos</a>
+      <a href="#">Ajuda</a>
+      <button class="Acesso">Meu Espaço</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Acervos Salvos</h3>
+      <ul>
+        <li><a href="#">Tendências recentes</a></li>
+        <li><a href="#">Histórico das pesquisas</a></li>
+
+        <li><a href="#">Adicionar espaço da universidade</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section class="chat-window">
+        <div class="chat-header">
+          <h2>Bem-vindo!</h2>
+          <p>Aqui na Única, você pode simplificar termos técnicos, acessar acervos e encontrar conexões entre áreas do conhecimento.</p>
+        </div>
+        <div class="chat-body" id="chatBody">
+          <div class="message user-message">
+            <p>Preciso encontrar artigos sobre redes neurais...</p>
+          </div>
+          <div class="message ai-response">
+            <p>Aqui estão algumas sugestões:</p>
+            <ul>
+              <li>Artigo Base...</li>
+            </ul>
+          </div>
+        </div>
+        <div class="chat-footer">
+          <input type="text" id="userInput" placeholder="Escreva sua pesquisa aqui..." />
+          <button id="sendButton">Enviar</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

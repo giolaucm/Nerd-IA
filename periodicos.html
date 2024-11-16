@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Periódicos CAPES</title>
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="periodicos.css">
+</head>
+<body>
+    <header class="header-gov">
+        <div class="logo-horizontal">
+          <img src="img/logo-govbr.png" alt="Logo Gov.br">
+          <p>Ministério da Educação/CAPES</p>
+        </div>
+        <nav class="menu">
+          <a href="#">Órgão do Governo</a>
+          <a href="#">Acesso à Informação</a>
+          <a href="#">Legislação</a>
+          <a href="#">Acessibilidade</a>
+        </nav>
+
+        <div class="line"></div>
+
+        <!-- Ícones corrigidos -->
+        <a href="#" style="color: black; font-weight: 400;"><i class="fi fi-sr-camera-retro"></i></a>
+        <a href="#" style="color: black; font-weight: 400;"><i class="fi fi-sr-headset"></i></a>
+        <a href="#" style="color: black; font-weight: 400;"><i class="fi fi-sr-comments"></i></a>
+        <a href="#" style="color: black; font-weight: 400;"><i class="fi fi-sr-circle-half-stroke"></i></a>
+    </header>
+    
+    <!-- Seta Sobreposta -->
+    <div class="toggle-arrow" id="toggle-gov-header">
+        <img src="img/angle-small-down.png" alt="Toggle Icon" width="20" height="20">
+    </div>
+    
+    <!-- Header CAPES -->
+    <header class="header-capes">
+        <div class="logo-horizontal">
+          <img id="logo-capes" src="img/logo-capes.png" alt="Logo CAPES">
+          <img id="logo-periodicos" src="img/logo-periodicos.jpg" alt="Logo Portal de Periódicos">
+        </div>
+        <nav class="menu">
+          <a href="#" style="color: black; font-weight: 400;">Sobre</a>
+          <a href="#" style="color: black; font-weight: 400;">Acervo</a>
+          <a href="#" style="color: black; font-weight: 400;">Treinamentos</a>
+          <a href="#" style="color: black; font-weight: 400;">Informativos</a>
+          <a href="#" style="color: black; font-weight: 400;">Ajuda</a>
+          <button class="Acesso">Meu Espaço</button>
+        </nav>
+    </header>
+
+    <div class="search-section">
+      <h1>O que você está procurando?</h1>
+      <div class="pesquisa-ia">
+        <input class="input-search" type="text" placeholder="Digite sua pesquisa aqui...">
+        <div class="buttons-container">
+          <button class="btn-search">
+            <img style="width: 20px; height: 20px;" src="img/search.svg" alt="Search Icon">
+          </button>
+        </div>
+        <a href="unica.html" class="btn-ia">
+          <img style="width: 20px; height: 20px;" src="img/logotipo.png" alt="Logo IA">
+          <p>Pesquise com IA</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="text">
+        <p id="msg">Aqui você encontra conteúdo científico diversificado para deixar sua pesquisa ainda melhor.</p>
+        <p class="subtitulo">Desde livros, normas técnicas, patentes e estatísticas até vídeos e áudios reunidos em um só lugar.</p>
+        <button class="Acesso">Saiba Mais</button>
+      </div>
+      <div class="highlight">
+        <h2>Atenção!</h2>
+        <p>A equipe do Portal de Periódicos está atualizando os dados das Instituições de Ensino Superior participantes do Programa.</p>
+        <p>Caso tenha dúvidas, entre em contato: <a href="mailto:acesso.periodicos@capes.gov.br">acesso.periodicos@capes.gov.br</a></p>
+      </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,147 @@
+
+  
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  
+  .sidebar {
+    background-color: #ffffff;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    width: 30%;
+  }
+  
+  .chat-window {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .chat-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .chat-body {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 15px;
+  }
+  
+  .user-message {
+    text-align: right;
+    background-color: #e6f7ff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .ai-response {
+    text-align: left;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .chat-footer {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chat-footer input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .chat-footer button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .chat-window {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 500px; /* Ajuste conforme necessário */
+    border: 1px solid #ccc;
+  }
+  
+  .chat-body {
+    flex-grow: 1;
+    overflow-y: auto; /* Permite scroll somente na área do chat */
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .chat-header, .chat-footer {
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .chat-footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    gap: 10px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .user-message {
+    text-align: right;
+    background-color: #d1ecf1;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+  .ai-response {
+    text-align: left;
+    background-color: #f8d7da;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+  .sidebar {
+    width: 250px;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+    background-color: #f5f5f5;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar.hidden {
+    transform: translateX(100%);
+  }
+  
+
+  
+  .toggle-sidebar:hover {
+    background-color: #0056b3;
+  }
+  
