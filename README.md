@@ -32,7 +32,7 @@ Este projeto moderniza o **Portal de Periódicos CAPES**, integrando a inteligê
 
 ##  Estrutura do Projeto
 
- Nerd-IA 
+ Nerd-IA <br>
  ├── index.html # Página inicial do portal <br>
  ├── unica.html # Página do chat com o Nerd IA <br>
  ── styles.css # Estilização global <br>
