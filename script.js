@@ -1,7 +1,7 @@
 // Integração com API do ChatGPT e otimização do código do chat
 
 // API Key (Substitua pela sua chave de API real)
-const apiKey = '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';
+const apiKey = 'sk-yPiKkOBrSGe5uaHLG1LZP9Woox17Sd60KNKe9n6fGZT3BlbkFJBK6qCwDHOraGGrmtm0QfH1WNbWevKKWtp6wcsxAvYA';
 
 // Função para adicionar mensagens ao chat
 function addMessage(sender, message) {
@@ -75,4 +75,30 @@ toggleSidebarBtn.addEventListener('click', () => {
 
   // Ajusta o chat para ocupar o espaço total
   chatWindow.classList.toggle('expanded');
+});
+
+// Função para gerenciar perguntas e respostas limitadas a três interações
+let questionCount = 0;
+
+document.getElementById('sendButton').addEventListener('click', async function () {
+  if (questionCount >= 3) {
+    addMessage('ai', 'Você atingiu o limite de três perguntas. Obrigado por utilizar nosso assistente!');
+    return;
+  }
+
+  const inputField = document.getElementById('userInput');
+  const userMessage = inputField.value.trim();
+
+  if (!userMessage) return;
+
+  // Adiciona mensagem do usuário ao chat
+  addMessage('user', userMessage);
+
+  // Obter resposta da IA
+  const aiResponse = await getChatGPTResponse(userMessage);
+  addMessage('ai', aiResponse);
+
+  inputField.value = ''; // Limpa o campo de entrada
+
+  questionCount++; // Incrementa o contador de perguntas
 });
