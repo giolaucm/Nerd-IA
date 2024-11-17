@@ -1,7 +1,7 @@
 // Integração com API do ChatGPT e otimização do código do chat
 
 // API Key (Substitua pela sua chave de API real)
-const apiKey = 'sk-yPiKkOBrSGe5uaHLG1LZP9Woox17Sd60KNKe9n6fGZT3BlbkFJBK6qCwDHOraGGrmtm0QfH1WNbWevKKWtp6wcsxAvYA';
+const apiKey = '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';
 
 // Função para adicionar mensagens ao chat
 function addMessage(sender, message) {
