@@ -53,7 +53,21 @@ document.getElementById('sendButton').addEventListener('click', async function (
   addMessage('ai', aiResponse);
 
   inputField.value = ''; // Limpa o campo de entrada
-});
+});function addMessage(sender, message) {
+  const chatBody = document.getElementById('chatBody');
+  const messageDiv = document.createElement('div');
+  messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'ai-response');
+  
+  const messageContent = document.createElement('p');
+  messageContent.textContent = message;
+  
+  messageDiv.appendChild(messageContent);
+  chatBody.appendChild(messageDiv);
+
+  // Scroll automático para a última mensagem
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+
 
 // Função para alternar a visibilidade da barra lateral e ajustar o chat
 const toggleSidebarBtn = document.querySelector('.toggle-sidebar-btn');

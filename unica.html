@@ -4,17 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal Periódicos - CAPES</title>
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="unica.css">
   <link rel="stylesheet" href="periodicos.css">
 </head>
 <body>
 
+  <header class="header-gov">
+    <div class="logo-horizontal">
+      <img src="img/logo-govbr.png" alt="Logo Gov.br">
+      <p>Ministério da Educação/CAPES</p>
+    </div>
+    <nav class="menu">
+      <a href="https://www.gov.br/pt-br/orgaos-do-governo">Órgão do Governo</a>
+      <a href="https://www.gov.br/acessoainformacao/pt-br">Acesso à Informação</a>
+      <a href="http://www4.planalto.gov.br/legislacao">Legislação</a>
+      <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">Acessibilidade</a>
+    </nav>
+
+    <div class="line"></div>
+
+    <a href="https://www.gov.br/gestao/pt-br/acesso-a-informacao/servidores/servidores-publicos/painel-estatistico-de-pessoal" class="icon-link"><i class="fi fi-sr-chart-histogram"></i></a>
+    <a href="https://www.gov.br/gestao/pt-br/canais_atendimento/contatos" class="icon-link"><i class="fi fi-sr-headset"></i></a>
+    <a href="https://www.gov.br/gestao/pt-br/central-de-conteudo/publicacoes" class="icon-link"><i class="fi fi-sr-comments"></i></a>
+    <a class="btn-entrar" href="#"><i class="fi fi-sr-user"></i> Entrar</a>
+</header>
+
+<!-- Header CAPES -->
+<header class="header-capes">
+    <div class="logo-horizontal">
+      <img class="logo-capes" src="img/logo-capes.png" alt="Logo CAPES">
+      <img class="logo-periodicos" src="img/logo-periodicos.jpg" alt="Logo Portal de Periódicos">
+    </div>
+    <nav class="menu">
+      <a href="#" style="color: black;">Sobre</a>
+      <a href="#" style="color: black;">Acervo</a>
+      <a href="#" style="color: black;">Treinamentos</a>
+      <a href="#" style="color: black;">Informativos</a>
+      <a href="#" style="color: black;">Ajuda</a>
+    </nav>
+</header>
+
+<!-- Adicione isso abaixo do header na sua periodicos.html ou unica.html -->
+<nav class="breadcrumb">
+  <a href="periodicos.html"><i class="fi fi-sr-home"></i></a> &gt;  
+  <a href="unica.html">Chat NERD</a>
+</nav>
+
 <div class="container">
   
   <div class="nav">
     <button class="toggle-sidebar-btn">☰</button>
-    
+
     <aside class="sidebar">
       <h3>Acervos Salvos</h3>
       <ul>
@@ -25,7 +67,7 @@
     </aside> 
   </div>  
   
-  <main class="main-content" id="mainContent">
+  <main>
     <section class="chat-window">
       <div class="chat-header">
         <h2>Bem-vindo!</h2>
