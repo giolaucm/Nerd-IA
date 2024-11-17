@@ -17,7 +17,7 @@ function addMessage(sender, message) {
 // Função para obter resposta simulada da IA (substituir futuramente pela integração real)
 async function getChatGPTResponse(userMessage) {
   try {
-    const apiKey = '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'; // Substitua pela sua API Key válida
+    const apiKey = ''; // Substitua pela sua API Key válida
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
