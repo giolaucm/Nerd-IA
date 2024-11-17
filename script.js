@@ -1,23 +1,27 @@
+// Integração com API do ChatGPT e otimização do código do chat
+
+// API Key (Substitua pela sua chave de API real)
+const apiKey = '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';
+
 // Função para adicionar mensagens ao chat
 function addMessage(sender, message) {
   const chatBody = document.getElementById('chatBody');
   const messageDiv = document.createElement('div');
   messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'ai-response');
-  
+
   const messageContent = document.createElement('p');
   messageContent.textContent = message;
-  
+
   messageDiv.appendChild(messageContent);
   chatBody.appendChild(messageDiv);
-  
+
   // Rolagem automática para a última mensagem
   chatBody.scrollTop = chatBody.scrollHeight;
 }
 
-// Função para obter resposta simulada da IA (substituir futuramente pela integração real)
+// Função para obter resposta do ChatGPT
 async function getChatGPTResponse(userMessage) {
   try {
-    const apiKey = ''; // Substitua pela sua API Key válida
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
@@ -31,9 +35,14 @@ async function getChatGPTResponse(userMessage) {
     });
 
     const data = await response.json();
-    return data.choices[0].message.content;
+    if (response.ok) {
+      return data.choices[0].message.content;
+    } else {
+      console.error('Erro na resposta da API:', data);
+      return 'Erro ao obter resposta da IA. Tente novamente mais tarde.';
+    }
   } catch (error) {
-    console.error('Erro ao obter resposta da API:', error);
+    console.error('Erro ao se conectar com a API:', error);
     return 'Erro ao se conectar com o servidor. Tente novamente.';
   }
 }
@@ -42,32 +51,18 @@ async function getChatGPTResponse(userMessage) {
 document.getElementById('sendButton').addEventListener('click', async function () {
   const inputField = document.getElementById('userInput');
   const userMessage = inputField.value.trim();
-  
+
   if (!userMessage) return;
 
   // Adiciona mensagem do usuário ao chat
   addMessage('user', userMessage);
 
-  // Obter resposta da IA (simulada ou real)
+  // Obter resposta da IA
   const aiResponse = await getChatGPTResponse(userMessage);
   addMessage('ai', aiResponse);
 
   inputField.value = ''; // Limpa o campo de entrada
-});function addMessage(sender, message) {
-  const chatBody = document.getElementById('chatBody');
-  const messageDiv = document.createElement('div');
-  messageDiv.classList.add('message', sender === 'user' ? 'user-message' : 'ai-response');
-  
-  const messageContent = document.createElement('p');
-  messageContent.textContent = message;
-  
-  messageDiv.appendChild(messageContent);
-  chatBody.appendChild(messageDiv);
-
-  // Scroll automático para a última mensagem
-  chatBody.scrollTop = chatBody.scrollHeight;
-}
-
+});
 
 // Função para alternar a visibilidade da barra lateral e ajustar o chat
 const toggleSidebarBtn = document.querySelector('.toggle-sidebar-btn');
