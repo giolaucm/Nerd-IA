@@ -7,93 +7,137 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
 }
 
-#logo-periodicos {
+.logo-periodicos, .logo-capes {
     width: 40%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
-#logo-capes {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.Acesso {
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    height: 40px;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    width: 100px;
 }
 
-    .Acesso {
-        border-radius: 5px;
-        border: 1px solid black;
-        background-color: white;
-        height: 40px;
-        font-size: 15px;
-        font-family: "Raleway", sans-serif;
-        width: 100px;
-    }
+.pesquisa-ia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: 35px;
+  background-color: #f1f1f1; /* Cor de fundo da caixa */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 10px 15px; /* Espaçamento interno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  width: 100%;
+  max-width: 500px; /* Largura máxima da barra */
+}
 
-    .pesquisa-ia {
-        position: relative;
-        width: 100%;
-        max-width: 550px; /* ajusta conforme necessário */
-        margin-top:20px;
-        display: flex;
-        flex-direction: row;
-        
-      }
-      
-      .buttons-container {
-        position: absolute;
-        display: flex;
-        gap: 10px; /* Espaçamento entre os botões */
-        margin-bottom: 10px; /* Espaçamento entre botões e input */
-        width: 55%;
-        align-items: center;
-        flex-direction: row-reverse;
-        
-      }
-      
-      .input-search {
-        width: 100%;
-        padding: 10px;
-        font-size: 14px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
+.pesquisa-ia:hover {
+  border: 1px solid #C9952B; /* Borda azul ao passar o mouse */
+}
 
-      }
-      
-      
-      .btn-search   {
-        border: none;
-        background: none;
-        cursor: pointer;
-        height: 40px;
-        
-      }
 
-      .btn-ia{
-        background: none;
-        cursor: pointer;
-        height: 20px;
-        display: flex;
-        justify-content: row;
-        align-items: center;
-        width: 170px;
-        border-radius: 10px;
-        border: 1px solid black;
-        padding: 10px 20px;
-        margin-left: 20px;
-      }
 
-      #msg {
-        font-size: 25px;
-        width: 70%;
-      }
+.btn-mic,
+.btn-search {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #1351B4; /* Cor azul do ícone */
+}
 
-      .subtitulo {
-        font-size: 14px;
-      }
+.btn-mic:hover,
+.btn-search:hover {
+  color: #003399; /* Cor mais escura ao passar o mouse */
+}
+
+.input-search {
+  border: none;
+  background: transparent; /* Fundo transparente para combinar com a barra */
+  flex-grow: 1;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  outline: none; /* Remove o contorno ao focar */
+  transition: border-color 0.3s ease; /* Suaviza a mudança de cor */
+}
+
+.btn-search {
+    border: none;
+    background: none;
+    cursor: pointer;
+    height: 40px;
+}
+
+.btn-ia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    cursor: pointer;
+    border: 1px solid #1351B4;
+    border-radius: 10px;
+    padding: 10px 20px;
+    height: 20px;
+}
+
+#msg {
+    font-size: 25px;
+    width: 70%;
+}
+
+.subtitulo {
+    font-size: 14px;
+}
+
+.btn-entrar {
+    background-color: #f1f1f1;
+    color: #1351B4;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.line {
+    height: 25px;
+    width: 1px;
+    background-color: #0000001f;
+}
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Mantém os itens espaçados horizontalmente */
+  align-items: center; /* Alinha os itens ao topo verticalmente */
+  margin-top: -50px;
+  gap: 10px; /* Adiciona espaçamento entre os itens, se necessário */
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Mantém os itens espaçados verticalmente */
+  align-items: center; /* Alinha os itens ao centro horizontalmente */
+  gap: 10px; /* Adiciona espaçamento entre os itens, se necessário */
+  width: 50%;
+}
+.line2 {
+    height: 1px;
+    width: 100%;
+    background-color: #0000001f;
+}
+
+.tipo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -50px;
+}

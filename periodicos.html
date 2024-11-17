@@ -23,62 +23,75 @@
 
         <div class="line"></div>
 
-        <!-- Ícones corrigidos -->
-        <a href="#" style="color: black; font-weight: 400;"><i class="fi fi-sr-camera-retro"></i></a>
-        <a href="#" style="color: black; font-weight: 400;"><i class="fi fi-sr-headset"></i></a>
-        <a href="#" style="color: black; font-weight: 400;"><i class="fi fi-sr-comments"></i></a>
-        <a href="#" style="color: black; font-weight: 400;"><i class="fi fi-sr-circle-half-stroke"></i></a>
+        <a href="#" class="icon-link"><i class="fi fi-sr-camera-retro"></i></a>
+        <a href="#" class="icon-link"><i class="fi fi-sr-headset"></i></a>
+        <a href="#" class="icon-link"><i class="fi fi-sr-comments"></i></a>
+        <a href="#" class="icon-link"><i class="fi fi-sr-circle-half-stroke"></i></a>
+        <a class="btn-entrar" href="#"><i class="fi fi-sr-user"></i> Entrar</a>
     </header>
-    
-    <!-- Seta Sobreposta -->
-    <div class="toggle-arrow" id="toggle-gov-header">
-        <img src="img/angle-small-down.png" alt="Toggle Icon" width="20" height="20">
-    </div>
     
     <!-- Header CAPES -->
     <header class="header-capes">
         <div class="logo-horizontal">
-          <img id="logo-capes" src="img/logo-capes.png" alt="Logo CAPES">
-          <img id="logo-periodicos" src="img/logo-periodicos.jpg" alt="Logo Portal de Periódicos">
+          <img class="logo-capes" src="img/logo-capes.png" alt="Logo CAPES">
+          <img class="logo-periodicos" src="img/logo-periodicos.jpg" alt="Logo Portal de Periódicos">
         </div>
         <nav class="menu">
-          <a href="#" style="color: black; font-weight: 400;">Sobre</a>
-          <a href="#" style="color: black; font-weight: 400;">Acervo</a>
-          <a href="#" style="color: black; font-weight: 400;">Treinamentos</a>
-          <a href="#" style="color: black; font-weight: 400;">Informativos</a>
-          <a href="#" style="color: black; font-weight: 400;">Ajuda</a>
-          <button class="Acesso">Meu Espaço</button>
+          <a href="#" style="color: black;">Sobre</a>
+          <a href="#" style="color: black;">Acervo</a>
+          <a href="#" style="color: black;">Treinamentos</a>
+          <a href="#" style="color: black;">Informativos</a>
+          <a href="#" style="color: black;">Ajuda</a>
         </nav>
     </header>
 
-    <div class="search-section">
-      <h1>O que você está procurando?</h1>
-      <div class="pesquisa-ia">
-        <input class="input-search" type="text" placeholder="Digite sua pesquisa aqui...">
-        <div class="buttons-container">
-          <button class="btn-search">
-            <img style="width: 20px; height: 20px;" src="img/search.svg" alt="Search Icon">
-          </button>
+    <div class="horizontal">
+        <div class="propaganda-section">
+            <img src="img/propaganda.png" alt="Propaganda">
         </div>
-        <a href="unica.html" class="btn-ia">
-          <img style="width: 20px; height: 20px;" src="img/logotipo.png" alt="Logo IA">
-          <p>Pesquise com IA</p>
-        </a>
-      </div>
-    </div>
 
+        <div class="search-section">
+          <h3>O que você gostaria de procurar?</h3>
+        
+          <div class="pesquisa-ia">
+            <input class="input-search" type="text" placeholder="O que você procura?">
+            <button class="btn-mic">
+              <i class="fi fi-sr-microphone"></i>
+            </button>
+            <button class="btn-search">
+              <i class="fi fi-sr-search"></i>
+            </button>
+
+            <a href="unica.html" class="btn-ia">
+              <img style="width: 20px; height: 20px;" src="img/logo-oficial.svg" alt="Logo IA">
+              <p>Pesquise com o Nerd</p>
+            </a>
+          </div>
+        </div>
+    </div>
+    
+    
     <div class="content">
+      
       <div class="text">
         <p id="msg">Aqui você encontra conteúdo científico diversificado para deixar sua pesquisa ainda melhor.</p>
         <p class="subtitulo">Desde livros, normas técnicas, patentes e estatísticas até vídeos e áudios reunidos em um só lugar.</p>
         <button class="Acesso">Saiba Mais</button>
       </div>
-      <div class="highlight">
-        <h2>Atenção!</h2>
+      <article class="vertical">
+        <div class="tipo">
+        <p style="padding: 15px; color:#00000093;">Recente</p>
+        <div class="line2"></div>
+      </div>
+    
+      <h2>Atenção!</h2>
         <p>A equipe do Portal de Periódicos está atualizando os dados das Instituições de Ensino Superior participantes do Programa.</p>
         <p>Caso tenha dúvidas, entre em contato: <a href="mailto:acesso.periodicos@capes.gov.br">acesso.periodicos@capes.gov.br</a></p>
       </div>
     </div>
+    </article>
+        
+        
 </body>
 <script src="script.js"></script>
 </html>
